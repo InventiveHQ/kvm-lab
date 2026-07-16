@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.qcow2
+*.raw
+*.img
+*.iso
+*.state
+*.log
+before.xml
+after.xml
+tmp/
+generated/
+
