@@ -24,3 +24,15 @@ companion article so the repository is a convenience, not a dependency.
    persistent pool and volume, attach it, and expand its filesystem online.
 5. [`05-kvm-custom-network`](05-kvm-custom-network/) — add a custom NAT network,
    fixed DHCP lease, second guest NIC, and controlled route priority.
+6. [`06-kvm-snapshots-backup-restore`](06-kvm-snapshots-backup-restore/) — take
+   an atomic external checkpoint, create standalone backups, test a restore,
+   and merge overlays to an explicitly named base.
+7. [`07-kvm-cloning-templates`](07-kvm-cloning-templates/) — clone both disks
+   while resetting host-side and guest-side identity.
+8. [`08-kvm-gpu-passthrough-readiness`](08-kvm-gpu-passthrough-readiness/) —
+   audit IOMMU, isolation groups, device ownership, and libvirt node devices
+   before any VFIO detach.
+9. [`09-kvm-performance-tuning`](09-kvm-performance-tuning/) — measure topology
+   and disk throughput, apply a reversible limit, and prove rollback.
+10. [`10-kvm-live-migration`](10-kvm-live-migration/) — live-migrate a running
+    two-disk guest between hosts without shared storage.
