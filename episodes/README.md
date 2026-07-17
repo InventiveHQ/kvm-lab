@@ -20,3 +20,7 @@ companion article so the repository is a convenience, not a dependency.
    guest with SSH, guest-agent, and serial-console access.
 3. [`03-manage-kvm-with-virsh`](03-manage-kvm-with-virsh/) — inspect, resize,
    recover, and safely retire the guest with `virsh`.
+4. [`04-kvm-storage-pools-volumes`](04-kvm-storage-pools-volumes/) — create a
+   persistent pool and volume, attach it, and expand its filesystem online.
+5. [`05-kvm-custom-network`](05-kvm-custom-network/) — add a custom NAT network,
+   fixed DHCP lease, second guest NIC, and controlled route priority.

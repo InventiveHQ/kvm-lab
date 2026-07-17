@@ -1,0 +1,12 @@
+<network>
+  <name>tutorial-net</name>
+  <forward mode='nat'/>
+  <bridge name='virbr150' stp='on' delay='0'/>
+  <domain name='tutorial.test'/>
+  <ip address='192.168.150.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.150.100' end='192.168.150.200'/>
+      <host mac='52:54:00:77:05:01' name='demo-ubuntu01-data' ip='192.168.150.10'/>
+    </dhcp>
+  </ip>
+</network>
