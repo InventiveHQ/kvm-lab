@@ -1,0 +1,19 @@
+#cloud-config
+hostname: demo-ubuntu01
+manage_etc_hosts: true
+users:
+  - default
+  - name: demo
+    gecos: InventiveHQ Tutorial Guest
+    groups: [adm, sudo]
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    lock_passwd: true
+    ssh_authorized_keys:
+      - REPLACE_WITH_YOUR_PUBLIC_SSH_KEY
+packages:
+  - qemu-guest-agent
+runcmd:
+  - [systemctl, start, qemu-guest-agent]
+  - [systemctl, enable, --now, serial-getty@ttyS0.service]
+final_message: "demo-ubuntu01 is ready"

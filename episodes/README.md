@@ -12,3 +12,11 @@ Every published episode folder will contain:
 The complete command list will also remain in the YouTube description and the
 companion article so the repository is a convenience, not a dependency.
 
+## Published series
+
+1. [`01-install-kvm-on-ubuntu`](01-install-kvm-on-ubuntu/) — prepare and verify
+   the KVM/libvirt host.
+2. [`02-create-ubuntu-vm`](02-create-ubuntu-vm/) — create an Ubuntu cloud-image
+   guest with SSH, guest-agent, and serial-console access.
+3. [`03-manage-kvm-with-virsh`](03-manage-kvm-with-virsh/) — inspect, resize,
+   recover, and safely retire the guest with `virsh`.
